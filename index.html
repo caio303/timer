@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+    <script defer src="timer.js"></script>
+    <script defer src="listeners.js"></script>
+    <script defer src="gerarEventos.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">COUNTDOWN TIMER
+            <sub><button class="btn-sm">+</button></sub>
+        </h1>
+    </header>
+    <main>
+        <ul id="lista-eventos" class="unstyled">
+            <li class="li-evento">
+                <div class="evento">
+                    <div class="titulo">
+                        <h2>Evento 0:</h2>
+                        <input type="text" class="input-nome-evento" placeholder="Digite o nome do seu evento" onblur="onChangeTitulo"></input>
+                        <button class="remover-evento btn-sm">X</button>
+                    </div>
+                    <div class="campos">
+                        <input type="number" max="99" min="0" value="0" class="time months"> Months </input>
+                        <input type="number" max="99" min="0" value="0" class="time days"> Days </input>
+                        <input type="number" max="99" min="0" value="0" class="time hour"> Hours </input>
+                        <input type="number" max="60" min="0" value="0" class="time minute"> Mins </input>
+                        <input type="number" max="60" min="0" value="0" class="time sec"> Secs </input>
+                    </div>
+                    <hr>
+                    <div class="botoes">
+                        <button  class="start btn">Start</button>
+                        <button  class="reset btn">Reset</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </main>
+</body>
+
+<script defer src="modelo/evento.js"></script>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    background-color:#353535;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+     color: white;
+     font-weight: normal;
+     letter-spacing: .125rem;
+}
+
+#title {
+  position: relative;
+  margin: 2rem auto;
+  padding: 0 25.7rem
+}
+header .btn-sm {
+  padding: 0.4rem .6rem;
+  line-height: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 74%;
+  bottom: 16%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: inherit;
+}
+
+main ul.unstyled {
+  list-style: none;
+}
+
+.input-nome-evento {
+    width: 250px;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    border-radius: .02rem;
+}
+.input-nome-evento:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.evento {
+    height: 250px;
+    width: 700px;
+    background-color:#252525;
+    margin: auto auto 2rem auto;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0 2em;
+}
+
+.evento .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.evento .titulo>h2 {
+  font-size: 1.3rem;
+}
+.evento .titulo>.btn-sm {
+  position: absolute;
+  left: 94%;
+  margin-top: -1.5rem;
+}
+
+.evento .campos {}
+.evento .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+hr{
+    width: 100%;
+    height: 0.5px;;
+    border: 0.5px solid #353535;
+}
+
+.time {
+    font-family: 'Lato', sans-serif;
+    border-left: 1em;
+    align-self: center;
+   text-align: center;
+    background-color: #ffffff00;
+    font-size: 50px;
+    width: 70px;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.btn-sm {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 1.2rem;
+  padding: .6rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.btn-sm:hover {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transform: translateY(-1px);
+}
