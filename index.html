@@ -16,7 +16,7 @@
 <body>
     <header>
         <h1 id="title">COUNTDOWN TIMER
-            <sub><button class="btn-sm">+</button></sub>
+            <sub><button class="btn-sm" onclick="onClickAdd()">+</button></sub>
         </h1>
     </header>
     <main>
@@ -25,7 +25,7 @@
                 <div class="evento">
                     <div class="titulo">
                         <h2>Evento 0:</h2>
-                        <input type="text" class="input-nome-evento" placeholder="Digite o nome do seu evento" onblur="onChangeTitulo"></input>
+                        <input type="text" class="input-nome-evento" placeholder="Digite o nome do seu evento" onfocus="onFocusTitulo(event)"></input>
                         <button class="remover-evento btn-sm">X</button>
                     </div>
                     <div class="campos">

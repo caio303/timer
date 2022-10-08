@@ -1,28 +1,36 @@
-const updateEventos = (listaEventos) => {
+const iniciarUlEventos = (listaEventos) => {
     const htmlCompleto = gerarHtmlCompletoEventos(listaEventos)
 
-    document.querySelector("#lista-eventos").innerHTML += htmlCompleto
+    document.querySelector("#lista-eventos").innerHTML = htmlCompleto
 
     listaBtnsIniciar = document.querySelectorAll(".start");
     listaBtnsResetar = document.querySelectorAll(".reset");
     listaBtnsFechar = document.querySelectorAll(".remover-evento");
-    console.log("APPEND EVENTOS")
+}
+
+const adicionarLiNovoEvento = (novoEvento) => {
+    const htmlNovoEvento = gerarHtmlCompletoEventos([novoEvento])
+    document.querySelector("#lista-eventos").innerHTML += htmlNovoEvento
+
+    listaBtnsIniciar = document.querySelectorAll(".start");
+    listaBtnsResetar = document.querySelectorAll(".reset");
+    listaBtnsFechar = document.querySelectorAll(".remover-evento");
+    resetarTodosOsListeners()
 }
 
 const gerarHtmlCompletoEventos = (listaEventos) => {
     let htmlCompleto = ""
-    listaEventos.forEach((item, index) => {
+    listaEventos.forEach((item) => {
         // [0]-mes [1]-dia [2]-hora [3]-min [4]-sec
         let tempo = item.tempo.split("-")
         let estruturaHtmlEvento = `
                                     <li class="li-evento">
                                         <div class="evento">
                                             <div class="titulo">
-                                                <h2>${index+1}:</h2>
                                                 <input type="text" class="input-nome-evento" 
                                                     value="${item.nome}"
                                                     placeholder="Digite o nome do seu evento"
-                                                    onchange="onChangeTitulo(event)">
+                                                    onfocus="onFocusTitulo(event)">
                                                 </input>
                                                 <button class="remover-evento btn-sm">X</button>
                                             </div>

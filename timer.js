@@ -28,6 +28,8 @@ function timer(campos) {
 function iniciarIntervalo(indiceEvento,campos) {
     let nomeEvento = listaDeEventos[indiceEvento].nome;
 
+    console.log(`ADICIONANDO TIMER PARA: `,listaDeEventos[indiceEvento])
+
     if(listaTimers.findIndex(el=>el.nome===nomeEvento) !== -1) {
         pararIntervalo(indiceEvento)
         listaTimers[indiceEvento].timer = setInterval(()=> {
